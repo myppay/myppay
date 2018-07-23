@@ -171,28 +171,47 @@
       <div class="overlay"></div>
     </section>
 
-    <section class="contact bg-primary" id="contact">
+    <section class="contact bg-secondary" id="contact">
       <div class="container">
-        <h2>We
-          <i class="fa fa-heart"></i>
-          new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="https://www.facebook.com/myppay/" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        </ul>
+        <h2>Contacte-nos</h2>
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Por favor introduza o seu nome.">
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Por favor introduza o seu endereço de email.">
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                      <input type="tel" class="form-control" placeholder="Telefone *" id="phone" required data-validation-required-message="Por favor introduza o seu número de contacto.">
+                      <p class="help-block text-danger"></p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <textarea class="form-control" placeholder="Mensagem *" id="message" required data-validation-required-message="Por favor introduza a sua mensagem."></textarea>
+                      <p class="help-block text-danger"></p>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-xl">Enviar Mensagem</button>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center text-center">
+          <h3 class="section-subheading text-light"></h3>
+          <p><em class="fa fa-map"></em> Av. da Praia Grande XXX, Macau, China</p>
+          <p><em class="fa fa-phone"></em> <a href="+351219173142">+853 xxx xxx</a></p>
+          <p><em class="fa fa-mobile-phone"></em> <a href="tel:+351927797797">+853 xxx xxx</a></p>
+          <p><em class="fa fa-envelope"></em> <a href="mailto:info@myppay.com">info@myppay.com</a></p>
+        </div>
       </div>
     </section>
 
@@ -208,6 +227,10 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
