@@ -174,25 +174,25 @@
     <section class="contact bg-secondary" id="contact">
       <div class="container">
         <h2>Contacte-nos</h2>
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form action="https://formspree.io/info@myppay.net" method="POST" id="contactForm"/>
           <div class="row">
               <div class="col-md-6">
                   <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Por favor introduza o seu nome.">
+                      <input type="text" class="form-control" placeholder="Nome *" name="name" id="name" required data-validation-required-message="Por favor introduza o seu nome.">
                       <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Por favor introduza o seu endereço de email.">
+                      <input type="email" class="form-control" placeholder="Email *" name="email" id="email" required data-validation-required-message="Por favor introduza o seu endereço de email.">
                       <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                      <input type="tel" class="form-control" placeholder="Telefone *" id="phone" required data-validation-required-message="Por favor introduza o seu número de contacto.">
+                      <input type="tel" class="form-control" placeholder="Telefone *" name="phone" id="phone" required data-validation-required-message="Por favor introduza o seu número de contacto.">
                       <p class="help-block text-danger"></p>
                   </div>
               </div>
               <div class="col-md-6">
                   <div class="form-group">
-                      <textarea class="form-control" placeholder="Mensagem *" id="message" required data-validation-required-message="Por favor introduza a sua mensagem."></textarea>
+                      <textarea class="form-control" placeholder="Mensagem *" id="message" name="message" required data-validation-required-message="Por favor introduza a sua mensagem."></textarea>
                       <p class="help-block text-danger"></p>
                   </div>
               </div>
